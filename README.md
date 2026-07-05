@@ -1,2 +1,2 @@
 # AI-BOS
-AI BOS - All agents in one platform
+AI Business Operating System - All agents in one platform
