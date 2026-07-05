@@ -1,0 +1,45 @@
+# AI BOS — Website
+
+A 9-page glassmorphic marketing site for **AI BOS (AI Business Operating System)**.
+Plain HTML / CSS / JS — no build step, no framework, no paid tools required.
+
+## What's inside
+
+```
+├── index.html          Home
+├── about.html           About AI BOS
+├── features.html        Features (all AI agents)
+├── how-it-works.html    How It Works
+├── dashboard.html        Dashboard Preview
+├── pricing.html          Pricing
+├── contact.html          Contact Us
+├── about-ceo.html        About CEO
+├── login.html            Log In / Sign Up
+├── css/style.css         All styling (colors, fonts, layout, animations)
+├── js/script.js          Nav menu, scroll reveals, particle hero animation, form handling
+└── vercel.json           Clean-URL config for Vercel
+```
+
+## Editing the site
+
+Everything is plain text — open any file in a text editor (VS Code, Notepad, etc.) and change it directly.
+
+- **Text/copy:** edit the words inside each `.html` file.
+- **Colors:** open `css/style.css`, edit the values at the very top under `:root` (e.g. `--blue`, `--cyan`, `--purple`).
+- **Fonts:** also in `:root` — currently Poppins (headings) + Inter (body), loaded from Google Fonts in each page's `<head>`.
+- **Images/photos:** the CEO photo, robot, and dashboard visuals are all built with CSS/SVG (no external images), so there's nothing to break by editing. To swap the CEO placeholder for a real photo, replace the `.avatar-fill` div in `about-ceo.html` with `<img src="images/ceo.jpg" alt="Shifa Shakil">` and add your image file to an `images/` folder.
+- **Contact form / login form:** these currently show a success message but don't send real emails (no backend). To make them functional, connect the `<form>` tags to a service like Formspree, Web3Forms, or a Vercel serverless function.
+- **Navigation:** the same nav/footer markup is repeated at the top/bottom of every page — if you add a page, copy the `<nav>` and `<footer>` blocks from any existing page and update the links.
+
+## Deploying to Vercel (free)
+
+1. Go to [vercel.com](https://vercel.com) and sign up (free plan is enough).
+2. Click **Add New → Project**.
+3. Either:
+   - **Drag-and-drop:** upload this whole folder directly in the Vercel dashboard, or
+   - **Git:** push this folder to a GitHub repo, then import that repo in Vercel.
+4. Framework preset: choose **"Other"** (this is a static site, no build command needed).
+5. Click **Deploy** — Vercel will give you a live `.vercel.app` URL in under a minute.
+6. Add a custom domain later from the project's **Settings → Domains** tab if you want.
+
+No paid Vercel or Claude credits are required for any of this — the whole site is static files.
